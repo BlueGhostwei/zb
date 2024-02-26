@@ -19,5 +19,14 @@ if (!is_file(APP_PATH . 'admin/command/Install/install.lock')) {
     exit;
 }
 
+
+//默认跳转后台地址
+$request_url=$_SERVER['REQUEST_URI'];
+$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://": "http://";
+if($request_url == '/'){
+    $reback_url=$protocol.$_SERVER['HTTP_HOST'].'/pTVwQulDzt.php';
+    Header("Location:$reback_url");exit;
+}
+
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';
