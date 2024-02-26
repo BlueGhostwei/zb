@@ -1,0 +1,159 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nickname" class="form-control" name="row[nickname]" type="text" value="{$row.nickname|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Openid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-openid" class="form-control" name="row[openid]" type="number" value="{$row.openid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mobile_num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mobile_num" class="form-control" name="row[mobile_num]" type="text" value="{$row.mobile_num|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Type_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-type_id" class="form-control selectpicker" name="row[type_id]">
+                {foreach name="typeIdList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.type_id"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Code_num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-code_num" class="form-control" name="row[code_num]" type="text" value="{$row.code_num|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Avatar_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-avatar_image" class="form-control" size="50" name="row[avatar_image]" type="text" value="{$row.avatar_image|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="faupload-avatar_image" class="btn btn-danger faupload" data-input-id="c-avatar_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp,image/webp" data-multiple="false" data-preview-id="p-avatar_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-avatar_image" class="btn btn-primary fachoose" data-input-id="c-avatar_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-avatar_image"></span>
+            </div>
+            <ul class="row list-inline faupload-preview" id="p-avatar_image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-switch" class="form-control selectpicker" name="row[switch]">
+                {foreach name="switchList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.switch"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Is_business')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-is_business" class="form-control selectpicker" name="row[is_business]">
+                {foreach name="isBusinessList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.is_business"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Is_designer')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-is_designer" class="form-control selectpicker" name="row[is_designer]">
+                {foreach name="isDesignerList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.is_designer"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Scc_code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-scc_code" class="form-control" name="row[scc_code]" type="text" value="{$row.scc_code|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" class="form-control" name="row[address]" type="text" value="{$row.address|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Idcard_front')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-idcard_front" class="form-control" name="row[idcard_front]" type="text" value="{$row.idcard_front|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Idcard_opposite')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-idcard_opposite" class="form-control" name="row[idcard_opposite]" type="text" value="{$row.idcard_opposite|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Business_license
+
+business license
+
+business_license')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-business_license
+
+Business license
+
+business_license" class="form-control" name="row[business_license
+
+Business license
+
+business_license]" type="text" value="{$row.business_license
+
+Business license
+
+business_license|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Is_vip')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-is_vip" class="form-control selectpicker" name="row[is_vip]">
+                {foreach name="isVipList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.is_vip"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Vip_endtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-vip_endtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[vip_endtime]" type="text" value="{:$row.vip_endtime?datetime($row.vip_endtime):''}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>
