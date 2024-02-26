@@ -3,7 +3,7 @@ namespace app\api\controller;
 
 use app\common\controller\Api;
 
-class User extends Api
+class ZbUser extends Api
 {
 
     protected $noNeedLogin = ['*'];
