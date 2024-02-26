@@ -18,3 +18,4 @@ composer.lock
 .vscode
 node_modules
 .user.ini
+.composer.json
