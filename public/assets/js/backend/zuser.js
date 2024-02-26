@@ -29,7 +29,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'nickname', title: __('Nickname'), operate: 'LIKE', table: table, class: 'autocontent', formatter: Table.api.formatter.content},
-                        {field: 'openid', title: __('Openid')},
+                        // {field: 'openid', title: __('Openid')},
                         {field: 'mobile_num', title: __('Mobile_num'), operate: 'LIKE'},
                         {field: 'type_id', title: __('Type_id'), searchList: {"1":__('Type_id 1'),"2":__('Type_id 2')}, formatter: Table.api.formatter.normal},
                         {field: 'code_num', title: __('Code_num'), operate: 'LIKE'},
@@ -45,7 +45,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'is_vip', title: __('Is_vip'), searchList: {"1":__('Is_vip 1'),"2":__('Is_vip 2')}, formatter: Table.api.formatter.normal},
                         {field: 'vip_endtime', title: __('Vip_endtime'), operate: 'LIKE'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', autocomplete:false, formatter: Table.api.formatter.datetime},
-                        {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', autocomplete:false, formatter: Table.api.formatter.datetime},
+                        // {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', autocomplete:false, formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
