@@ -1,12 +1,11 @@
 <?php
 
 return [
-    'Id'=>'编号',
-    'Nickname'                                             => '昵称',
-    'Openid'                                               => '微信openid',
-    'Mobile_num'                                           => '电话号码',
+    'Nickname'               => '昵称',
+    'Openid'                 => '微信openid',
+    'True_name'              => '姓名',
     'Type_id'                                              => '用户类型',
-    'True_name'                                            => '姓名',
+    'Mobile_num'                                           => '电话号码',
     'Company_name'                                         =>'公司名称',
     'Type_id 1'                                              => '个人用户',
     'Type_id 2'                                              => '企业用户',
@@ -26,9 +25,9 @@ return [
     'Is_vip 2'                                               => '否',
     'Scc_code'                                             => '社会信用代码',
     'Address'                                              => '地址',
-    'Idcard_front'                                         => '身份证正面',
-    'Idcard_opposite'                                      => '身份证方面',
-    'business_license' => '营业执照',
+    'Idcard_front_image'                                         => '身份证正面',
+    'Idcard_opposite_image'                                      => '身份证方面',
+    'business_license_image' => '营业执照',
     'Vip_endtime'                                          => '会员时间',
     'Createtime'                                           => '创建时间',
     'Updatetime'                                           => '更新时间'
