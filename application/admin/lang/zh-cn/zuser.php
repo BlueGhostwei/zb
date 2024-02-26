@@ -1,10 +1,13 @@
 <?php
 
 return [
+    'Id'=>'编号',
     'Nickname'                                             => '昵称',
     'Openid'                                               => '微信openid',
     'Mobile_num'                                           => '电话号码',
     'Type_id'                                              => '用户类型',
+    'True_name'                                            => '姓名',
+    'Company_name'                                         =>'公司名称',
     'Type_id 1'                                              => '个人用户',
     'Type_id 2'                                              => '企业用户',
     'Code_num'                                             => '推荐码',
@@ -13,7 +16,7 @@ return [
     'Switch 1'                                               => '锁定',
     'Switch 2'                                               => '不锁定',
     'Is_business'                                          => '是否业务员',
-    'Is_business 1'                                          => '是否',
+    'Is_business 1'                                          => '是',
     'Is_business 2'                                          => '否',
     'Is_designer'                                          => '是否设计师',
     'Is_designer 1'                                          => '是',
